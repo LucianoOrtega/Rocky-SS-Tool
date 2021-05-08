@@ -1,4 +1,4 @@
-('C:\\Users\\Usuario\\Desktop\\Rocky SSTools\\Rocky SSTool '
+('C:\\Users\\Usuario\\Desktop\\Rocky SSTools\\Rocky-SS-Tool\\Rocky SSTool '
  'Semiautomática\\build\\Rocky SSTool\\PYZ-00.pyz',
  [('multiprocessing.popen_fork',
    'c:\\users\\usuario\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\popen_fork.py',
@@ -777,11 +777,11 @@
   ('os',
    'c:\\users\\usuario\\appdata\\local\\programs\\python\\python39\\lib\\os.py',
    'PYMODULE'),
-  ('stringprep',
-   'c:\\users\\usuario\\appdata\\local\\programs\\python\\python39\\lib\\stringprep.py',
-   'PYMODULE'),
   ('_py_abc',
    'c:\\users\\usuario\\appdata\\local\\programs\\python\\python39\\lib\\_py_abc.py',
+   'PYMODULE'),
+  ('stringprep',
+   'c:\\users\\usuario\\appdata\\local\\programs\\python\\python39\\lib\\stringprep.py',
    'PYMODULE'),
   ('colorama',
    'C:\\Users\\Usuario\\AppData\\Roaming\\Python\\Python39\\site-packages\\colorama\\__init__.py',

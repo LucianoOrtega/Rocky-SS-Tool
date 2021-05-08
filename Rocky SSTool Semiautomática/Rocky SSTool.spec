@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['main.py'],
-             pathex=['C:\\Users\\Usuario\\Desktop\\Rocky SSTools\\Rocky SSTool Semiautomática'],
+             pathex=['C:\\Users\\Usuario\\Desktop\\Rocky SSTools\\Rocky-SS-Tool\\Rocky SSTool Semiautomática'],
              binaries=[],
              datas=[],
              hiddenimports=[],
