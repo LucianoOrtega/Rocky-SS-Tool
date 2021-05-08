@@ -10,6 +10,9 @@ Este es un .dll que es extremadamente extraño, el usuario podría estar usando 
 *  **Color amarillo** <br>
 Este es un .exe, podría ser normal, pero debe verificarlo porque cabe la posibilidad que sea un external client,es recomendable que lo revise.
 
+# Como se usa
+Debe ejecutarlo como administrador con el minecraft abierto, Y empezara el analisis por si solo.
+
 # Nota importante
 <br>
 Si encuentra algún error, avíseme para que pueda arreglarlo. <br>
