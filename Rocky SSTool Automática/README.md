@@ -10,7 +10,7 @@ Este es un .dll que es extremadamente extraño, el usuario podría estar usando 
 *  **Color amarillo** <br>
 Este es un .exe, podría ser normal, pero debe verificarlo porque cabe la posibilidad que sea un external client,es recomendable que lo revise.
 
-# Important note
+# Nota importante
 <br>
 Si encuentra algún error, avíseme para que pueda arreglarlo. <br>
 Gracias por leer, att: Luciano.
