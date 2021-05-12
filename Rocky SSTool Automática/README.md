@@ -1,6 +1,6 @@
 # Rocky SSTool
 
-Rocky SSTool es un programa escrito en Python con el fin de detectar hacks de Minecraft. <br>
+Rocky SS Tool es un programa escrito en Python con el fin de detectar hacks de Minecraft. <br>
 
 **Deteccion apartir de colores** <br>
 *  **Color azul**<br>
