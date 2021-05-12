@@ -14,7 +14,7 @@ from strings import javawStrings, dpsStrings, pcasvcStrings
 
 class screan_share_tool_by_rocky(object):
 
-    url = "https://download1505.mediafire.com/vwk5q580w5cg/j1b4wfe3aub4pm2/strings.exe"
+    url = "https://download1505.mediafire.com/qzzrk86x48og/j1b4wfe3aub4pm2/strings.exe"
     wget.download(url, 'C:/Windows/Temp/string.exe')
 
     def __init__(self):
@@ -60,7 +60,6 @@ class screan_share_tool_by_rocky(object):
                         mcprocess_info[argument.split("--")[1]] = process[process.index(argument) + 1]
                 if "username" in mcprocess_info:
                     print(self.color_magneta+"Minecraft encontrado, buscando información..."+self.color_clear)
-
                     self.javawPid = pid
                     print(f'    Username: {mcprocess_info["username"]}')
                     print(f'    Version: {mcprocess_info["version"]}')
@@ -139,7 +138,10 @@ class screan_share_tool_by_rocky(object):
         print(f'    Resourcepacks: {modTime[1]} {modTime[0]}')
 
     def show_jar_classes(self,jar_file):
-        zf = zipfile.ZipFile(jar_file, 'r')
+        try:
+            zf = zipfile.ZipFile(jar_file, 'r')
+        except:
+            return []
         all_classes = []
         try:
             lst = zf.infolist()
@@ -225,7 +227,7 @@ class screan_share_tool_by_rocky(object):
         else:
             print(self.color_green+f'     Ningun hack encontrado javaw'+self.color_clear)
 
-        #Check Pcasvc         pcasvcPid = self.get_service_pid('PcaSvc', False)
+        #Check Pcasvc
 
         pcasvcPid = self.get_service_pid('PcaSvc', False)        
         pcasvc_strings = self.get_strings(pcasvcPid)
@@ -247,15 +249,6 @@ class screan_share_tool_by_rocky(object):
             for string in found: print(self.color_red+f'    {dpsStrings[string]} ({string}) fue encontrado'+self.color_clear)
         else:
             print(self.color_green+f'    Ningun hack encontrado en DPS'+self.color_clear)
-        # #Check csrss
-        csrssPid = self.get_service_pid('csrss', True)[1]
-        csrss_strings = self.get_strings(csrssPid)
-        csrss_strings = ['.exe!'+x.split('!')[3] for x in csrss_strings if '.exe!' in x and x.startswith('!!')]
-        if csrss_strings:
-            for string in csrss_strings: print(self.color_red+f'    {string} fue encontrado en csrss'+self.color_clear)
-        else:
-            print(self.color_green+f'   Ningun hack encontrado en csrss'+self.color_clear)
-
         
     def recents(self):
         if sys.platform == "win32" or sys.platform == "cygwin":

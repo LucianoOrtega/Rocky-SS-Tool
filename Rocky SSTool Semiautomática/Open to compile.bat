@@ -1,1 +1,0 @@
-pyinstaller main.py --onefile --ico="Rocky SSTool.ico" --name="Rocky SSTool"
