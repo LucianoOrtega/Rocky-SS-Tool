@@ -11,7 +11,13 @@ Este es un .dll que es extremadamente extraño, el usuario podría estar usando 
 Este es un .exe, podría ser normal, pero debe verificarlo porque cabe la posibilidad que sea un external client,es recomendable que lo revise.
 
 # Como se usa
-Debe ejecutarlo como administrador con el minecraft abierto, Y empezara el analisis por si solo.
+Debes ejecutarlo como administrador con el minecraft abierto, Y empezara el analisis por si solo.
+
+## Compilar proyecto
+
+Solo basta con descargar tener python y las siguientes librerias: PyInstaller (pip install pyinstaller), Colorama (pip install colorama), psutil (pip install psutil), pathlib (pip install pathlib), requests(pip install requests) y escribir en siguiente comando:
+pyinstaller main.py --onefile --ico="Rocky SSTool.ico" --name="Rocky SSTool"
+
 
 # Nota importante
 <br>
