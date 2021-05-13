@@ -1,6 +1,5 @@
 import psutil
 import subprocess
-import json
 import colorama
 import pathlib
 import os
@@ -9,7 +8,6 @@ import time
 import zipfile
 import base64
 import msvcrt
-import wget
 import requests
 from strings import javawStrings, dpsStrings, pcasvcStrings
 
