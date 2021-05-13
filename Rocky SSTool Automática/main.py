@@ -10,12 +10,14 @@ import zipfile
 import base64
 import msvcrt
 import wget
+import requests
 from strings import javawStrings, dpsStrings, pcasvcStrings
 
 class screan_share_tool_by_rocky(object):
 
-    url = "https://download1505.mediafire.com/qzzrk86x48og/j1b4wfe3aub4pm2/strings.exe"
-    wget.download(url, 'C:/Windows/Temp/string.exe')
+    url = 'https://cdn.discordapp.com/attachments/504257208200986624/842007821653377054/strings.exe'
+    myfile = requests.get(url)
+    open('C:/Windows/Temp/string.exe', 'wb').write(myfile.content)
 
     def __init__(self):
         self.recordingSoftwares = {"bdcam.exe":"Bandicam", "action.exe":"Action", "obs64.exe":"OBS", "dxtory":"Dxtory", "nvidia share":"Geforce Experience", "camtasia":"Camtasia", "fraps":"Fraps", "screencast":"Screencast"}
