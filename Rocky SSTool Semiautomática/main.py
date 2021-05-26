@@ -1,7 +1,5 @@
 import msvcrt #Evitar que se cierre el script 
-import re #Buscar las string
 import base64 #Banner
-import colorama #Poner colores a los textos
 from colorama import init, Fore, Back, Style #Poner colores a los textos
 from strings import dpsStrings, javawStrings, pcasvcStrings
 init()

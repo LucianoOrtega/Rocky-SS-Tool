@@ -1,7 +1,6 @@
 import psutil
 import subprocess
 import colorama
-import pathlib
 import os
 import sys
 import time
@@ -82,6 +81,7 @@ class screan_share_tool_by_rocky(object):
                     return True
 
         print(self.color_red+"Java/Javaw no encontrado"+self.color_clear)
+        os.remove('C:\Windows\Temp\string.exe')
         print(self.color_red+"Cierre esta ventana y ejecute Minecraft!")
         key = None
         while key != '\x1b':
@@ -97,7 +97,7 @@ class screan_share_tool_by_rocky(object):
         elif "Sigma" in os.listdir(self.minecraft_path): print(self.color_red+'Sigma fue encontrado en la .minecraft'+self.color_clear)
         elif "Wolfram" in os.listdir(self.minecraft_path): print(self.color_red+'Wolfram fue encontrado en la .minecraft'+self.color_clear)
         elif "Flux" in os.listdir(self.minecraft_path): print(self.color_red+'Flux fue encontrado en la .minecraft'+self.color_clear)
-        elif "Artois" in os.listdir(self.minecraft_path): print(self.color_red+'Artois fue encontrado en la .minecraft'+self.color_clear)
+        elif "Aristois" in os.listdir(self.minecraft_path): print(self.color_red+'Aristois fue encontrado en la .minecraft'+self.color_clear)
         else: print(self.color_green+'Ningun hack común encontrado en la .minecraft'+self.color_clear)
         
     def software_grabar(self):
