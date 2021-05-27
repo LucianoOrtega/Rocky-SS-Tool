@@ -8,4 +8,4 @@ Es importante que no toquen ninguna tecla.
 ## Compilar proyecto
 
 Solo basta con descargar PyInstaller (pip install pyinstaller), Colorama (pip install colorama) y escribir en siguiente comando:
-pyinstaller main.py --onefile --ico="Rocky SSTool.ico" --name="Rocky SSTool"
+pyinstaller main.py --onefile --ico="Rocky SSTool.ico"  --name="Rocky SSTool"

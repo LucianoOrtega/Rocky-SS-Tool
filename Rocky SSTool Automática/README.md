@@ -16,7 +16,7 @@ Debes ejecutarlo como administrador con el minecraft abierto, Y empezara el anal
 ## Compilar proyecto
 
 Solo basta con descargar tener python y las siguientes librerias: PyInstaller (pip install pyinstaller), Colorama (pip install colorama), psutil (pip install psutil), pathlib (pip install pathlib), requests(pip install requests) y escribir en siguiente comando:
-pyinstaller main.py --onefile --ico="Rocky SSTool.ico" --name="Rocky SSTool"
+pyinstaller main.py --onefile --ico="Rocky SSTool.ico" --name="Rocky SSTool" --uac-admin
 
 
 # Nota importante
