@@ -12,7 +12,8 @@ Deben tener el siguiente programa con sus librerias:
 1. Python 3
 2. PyInstaller (pip install pyinstaller)
 3. Colorama (pip install colorama)
-Y para compilar deben de poner este comando en CMD o PowerShell (Deben posicionarse en la carpeta de Rocky SSTool Automática): pyinstaller main.py --onefile --ico="Rocky SSTool.ico" --name="Rocky SSTool" 
+Y para compilar deben de poner este comando en CMD o PowerShell (Deben posicionarse en la carpeta de Rocky SSTool Automática): 
+pyinstaller main.py --onefile --ico="Rocky SSTool.ico" --name="Rocky SSTool" 
 
 # Nota importante
 <br>
