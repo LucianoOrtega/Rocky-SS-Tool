@@ -15,7 +15,16 @@ Debes ejecutarlo como administrador con el minecraft abierto, Y empezara el anal
 
 ## Compilar proyecto
 
-Solo basta con descargar tener python y las siguientes librerias: PyInstaller (pip install pyinstaller), Colorama (pip install colorama), psutil (pip install psutil), pathlib (pip install pathlib), requests(pip install requests) y escribir en siguiente comando:
+Deben tener el siguiente programa con sus librerias:
+
+1. Python 3
+2. PyInstaller (pip install pyinstaller)
+3. Colorama (pip install colorama)
+4. Psutil (pip install psutil)
+5. Pathlib (pip install pathlib)
+6. Requests (pip install requests)
+
+Y para compilar deben de poner este comando en CMD o PowerShell (Deben posicionarse en la carpeta de Rocky SSTool Automática):
 pyinstaller main.py --onefile --ico="Rocky SSTool.ico" --name="Rocky SSTool" --uac-admin
 
 
