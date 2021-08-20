@@ -1,6 +1,6 @@
-import msvcrt #Evitar que se cierre el script 
-import base64 #Banner
-from colorama import init, Fore, Back, Style #Poner colores a los textos
+import msvcrt 
+import base64
+from colorama import init, Fore
 from strings import dpsStrings, javawStrings, pcasvcStrings
 init()
 
@@ -17,7 +17,7 @@ for client in open('DPS.txt', 'r').read().splitlines():
         for cheat, name in dpsStrings.items():
 
             if cheat in client:
-                print(Fore.RED + f'{name} ({cheat}) fue encontrado.')
+                print(Fore.RED + f'{name} ({cheat}) fue encontrado en DPS.')
 
 for client in open('Pcasvc.txt', 'r').read().splitlines():
 
@@ -28,7 +28,7 @@ for client in open('Pcasvc.txt', 'r').read().splitlines():
         for cheat, name in pcasvcStrings.items():
 
             if cheat in client:
-                print(Fore.RED + f'{name} ({cheat}) fue encontrado.')
+                print(Fore.RED + f'{name} ({cheat}) fue encontrado en PcaSvc.')
 
 for client in open('Java.txt', 'r').read().splitlines():
 
@@ -39,11 +39,11 @@ for client in open('Java.txt', 'r').read().splitlines():
         for cheat, name in javawStrings.items():
 
             if cheat in client:
-                print(Fore.RED + f'{name} ({cheat}) fue encontrado.')
+                print(Fore.RED + f'{name} ({cheat}) fue encontrado en Java/Javaw.')
 
 
 print(Fore.LIGHTCYAN_EX+"-"*28 + "Fin" + "-"*29)
-print(Fore.RESET + "Cierre la ventana, ¡El analisis ya ha terminado!")
+print(Fore.RESET + "Cierre la ventana, ¡El análisis ya ha terminado!")
 key = None
 while key != '\x1b':
     key = msvcrt.getch()
