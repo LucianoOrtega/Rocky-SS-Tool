@@ -82,7 +82,10 @@ class RockySSTool(object):
         print(self.color_red+"El proceso Java/Javaw no fue encontrado"+self.color_clear)
         os.remove('C:\Windows\Temp\string.exe')
         print(self.color_red+"¡Cierre esta ventana y ejecute Minecraft!")
-        return false
+        key = None
+        while key != '\x1b':
+         key = msvcrt.getch()
+        return False
 
         
     def common_hacks(self):
